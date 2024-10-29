@@ -13,13 +13,13 @@ const config: Config = {
       "compact-xl": ["18px", "20px"],
       "compact-lg": ["16px", "20px"],
       compact: ["14px", "20px"],
-      "compact-sm": ["13px", "20px"],
+      "compact-sm": ["13px", "19px"],
       "compact-xs": ["12px", "20px"],
 
       xl: ["18px", "26px"],
       lg: ["16px", "26px"],
       md: ["14px", "26px"],
-      sm: ["13px", "26px"],
+      sm: ["13px", "25px"],
       xs: ["12px", "26px"],
     },
     extend: {
