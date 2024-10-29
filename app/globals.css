@@ -2,20 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "SuisseIntl";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/SuisseIntl-Regular.ttf") format("truetype");
+  descent-override: 17%;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/SuisseIntl-Medium.ttf") format("truetype");
+  descent-override: 17%;
+}
+
+html {
+  font-family: "SuisseIntl", sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --blue-50: 229 244 255;
+  --blue-100: 204 234 255;
+  --blue-200: 153 213 255;
+  --blue-300: 102 192 255;
+  --blue-400: 51 171 255;
+  --blue-500: 0 150 255;
+  --blue-600: 0 138 255;
+  --blue-700: 0 113 214;
+  --blue-800: 0 88 173;
+  --blue-900: 0 64 133;
+  --blue-950: 0 44 94;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  --crimson-50: 255 240 249;
+  --crimson-100: 255 228 244;
+  --crimson-200: 255 203 234;
+  --crimson-300: 255 162 218;
+  --crimson-400: 246 103 194;
+  --crimson-500: 255 53 174;
+  --crimson-600: 255 3 154;
+  --crimson-700: 214 0 128;
+  --crimson-800: 180 0 108;
+  --crimson-900: 155 0 93;
+  --crimson-950: 87 0 52;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  --shadow-input-field: 0px 3px 4px rgba(0, 0, 0, 0.06),
+    0px 2px 0px -1px rgba(0, 0, 0, 0.07), 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+  --shadow-input-field-focus: 0px 3px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 0px rgba(0, 0, 0, 0.08), 0px 0px 0px 1px rgba(0, 138, 255, 0.8),
+    0px 0px 0px 4px rgba(0, 138, 255, 0.12);
+
+  --bg-base: theme("colors.white");
+  --bg-subtle: #f7f7f9;
+
+  --text-base: theme("colors.zinc.950");
+  --text-subtle: theme("colors.zinc.500");
+  --text-muted: theme("colors.zinc.400");
+  --text-inverted: theme("colors.white");
+
+  --text-chip-crimson: theme("colors.crimson.600");
+  --bg-chip-crimson: theme("colors.crimson.100");
+  --icon-chip-crimson: theme("colors.crimson.300");
 }
