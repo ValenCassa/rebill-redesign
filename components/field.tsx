@@ -4,7 +4,7 @@ import { ComponentPropsWithoutRef, forwardRef } from "react";
 
 type FieldRootProps = ComponentPropsWithoutRef<"div">;
 const FieldRoot = forwardRef<HTMLDivElement, FieldRootProps>((props, ref) => {
-  const { className, ...rest } = props;
+  const { ...rest } = props;
 
   return <div className="space-y-1.5 w-full" {...rest} ref={ref} />;
 });
@@ -18,7 +18,7 @@ type FieldLabelProps = ComponentPropsWithoutRef<"label"> & {
 };
 const FieldLabel = forwardRef<HTMLLabelElement, FieldLabelProps>(
   (props, ref) => {
-    const { className, optional, ...rest } = props;
+    const { optional, ...rest } = props;
 
     return (
       <div className="inline-flex items-center gap-1">

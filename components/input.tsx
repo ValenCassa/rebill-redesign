@@ -3,7 +3,7 @@ import { ComponentPropsWithoutRef, forwardRef } from "react";
 type InputProps = ComponentPropsWithoutRef<"input">;
 
 const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  const { className, ...rest } = props;
+  const { ...rest } = props;
   return (
     <input
       autoComplete="off"
